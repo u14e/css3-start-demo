@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.accordionMenu {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    color: #424242;
+    font: 14px Arial;
+}
+
+.accordionMenu h2 {
+    margin: 5px 0;
+    padding: 0;
+    position: relative;
+}
+
+.accordionMenu h2:before {
+    border: 5px solid #fff;
+    border-color: #fff transparent transparent;
+    height: 0;
+    width: 0;
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.accordionMenu h2 a {
+    display: block;
+    background-color: #8f8f8f;
+    background-image: -webkit-linear-gradient(top, #cecece, #8f8f8f);
+    background-image: -moz-linear-gradient(top, #cecece, #8f8f8f);
+    background-image: -ms-linear-gradient(top, #cecece, #8f8f8f);
+    background-image: -o-linear-gradient(top, #cecece, #8f8f8f);
+    background-image: linear-gradient(top, #cecece, #8f8f8f);
+    color: #424242;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #aeaeae;
+    font-size: 15px;
+}
+
+.accordionMenu :target h2 a,
+.accordionMenu h2 a:focus,
+.accordionMenu h2 a:hover,
+.accordionMenu h2 a:active {
+    background-color: #2288dd;
+    background-image: -webkit-linear-gradient(top, #6bb2ff, #2288dd);
+    background-image: -moz-linear-gradient(top, #6bb2ff, #2288dd);
+    background-image: -ms-linear-gradient(top, #6bb2ff, #2288dd);
+    background-image: -o-linear-gradient(top, #6bb2ff, #2288dd);
+    background-image: linear-gradient(top, #6bb2ff, #2288dd);
+    color: #fff;
+}
+
+.accordionMenu p {
+    height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    transition: height 0.5s ease-in-out;
+}
+
+.accordionMenu :target p {
+    height: 100px;
+    overflow: auto;
+}
+
+.accordionMenu :target h2:before {
+    border-color: transparent transparent transparent #fff;
+}

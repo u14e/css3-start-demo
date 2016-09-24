@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 300px;
+    margin: 0 auto;
+}
+
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+div div {
+    background: orange;
+}
+
+body > div {
+    background: green;
+}
+
+.active ~ div {
+    background: red;
+}
+
+.active + div {
+    background: lime;
+}

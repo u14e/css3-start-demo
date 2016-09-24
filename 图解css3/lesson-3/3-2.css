@@ -1,0 +1,44 @@
+div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.top {
+    box-shadow: 0 -4px 5px -3px rebeccapurple;
+}
+
+.blur {
+    box-shadow: 0 0 10px #06c;
+}
+/* 类似border-width */
+.spread {
+    box-shadow: 0 0 0 5px #06c;
+}
+
+.inset {
+    box-shadow: inset 3px 3px 10px #06c;
+}
+
+.img-inset {
+    display: inline-block;
+    box-shadow: inset 5px 5px 100px #06c;
+    width: 100px;
+}
+img {
+    position: relative;
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+}
+
+/* 不设置模糊半径，只设置扩展半径(注意阴影书写顺序，最先写的显示在最顶层) */
+.multi {
+    box-shadow: 0 0 1px rebeccapurple,
+                0 0 0 5px deepskyblue,
+                0 0 0 8px limegreen,
+                0 0 0 12px yellow,
+                0 0 0 20px #f00;
+}

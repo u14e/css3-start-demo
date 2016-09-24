@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    width: 450px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #dedede #bababa #aaa;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgba(255, 255, 255, 0.1),
+                0 3px 0 #bbb,
+                0 4px 0 #aaa,
+                0 5px 5px #444;
+    background: #f6f6f6;
+    background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+    background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+}
+.clearfix::after {
+    content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+#wrapper .search {
+    float: left;
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px #ddd,
+                0 1px 0 #fff;
+}
+#wrapper .search:focus {
+    outline: 0;
+    border-color: #aaa;
+    box-shadow: inset 0 1px 1px #bbb;
+}
+
+#wrapper .btn {
+    float: right;
+    width: 100px;
+    height: 42px;
+    border: 1px solid #00748f;
+    border-radius: 3px;
+    color: #fafafa;
+    background-color: #0483a0;
+    background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+    background-image: linear-gradient(top, #31b2c3, #0483a0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
+                0 1px 0 #fff;
+    cursor: pointer;
+}
+#wrapper .btn:focus,
+#wrapper .btn:hover {
+    background-color: #31b2c3;
+    background-image: -webkit-linear-gradient(top, #0483a0, #31b2c3);
+    background-image: -moz-linear-gradient(top, #0483a0, #31b2c3);
+    background-image: -ms-linear-gradient(top, #0483a0, #31b2c3);
+    background-image: linear-gradient(top, #0483a0, #31b2c3);
+}
+#wrapper .btn:active {
+    outline: 0;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.5);
+}

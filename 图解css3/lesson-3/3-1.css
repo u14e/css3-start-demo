@@ -1,0 +1,32 @@
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-color: #a1a1a1;
+}
+.div1 {
+    border: 20px solid #ccc;
+    border-radius: 40px;    /* 内径=外径-边框宽（40-20=20） */
+}
+.div2 {
+    border-radius: 50%;
+}
+.div3 {
+    height: 50px;
+    border-radius: 50px 50px 0 0;
+}
+.div4 {
+    border-radius: 100% 0 0 0;
+}
+.div5 {
+    height: 50px;
+    border-radius: 100px / 50px;
+}
+.div6 {
+    width: 0;
+    height: 0;
+    content: "";
+    background-color: transparent;
+    border: 50px solid;
+    border-color: transparent transparent #a1a1a1 transparent;
+}

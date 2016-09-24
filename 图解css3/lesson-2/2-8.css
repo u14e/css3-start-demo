@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    width: 400px;
+    margin: 50px auto;
+    list-style-type: none;
+    border: 1px solid #ababab;
+}
+li, div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font: bold 30px/50px arial;
+    margin: 5px;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* 无效 */
+ul > li:nth-child(8) {
+    background-color: #ababab;
+}
+
+ul > li:nth-of-type(8) {
+    background-color: #ababab;
+}
