@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    vertical-align: center;
+    background-image: -webkit-linear-gradient(top, #222, #333);
+    background-image: -moz-linear-gradient(top, #222, #333);
+    background-image: -ms-linear-gradient(top, #222, #333);
+    background-image: linear-gradient(top, #222, #333);
+}
+div[class^="face"] {
+    width: 104px;
+    height: 104px;
+    padding: 4px;
+    margin: 16px;
+    border-radius: 10%;
+    background-color: #e7e7e7;
+    box-shadow: inset 0 5px white,
+                inset 0 -5px #bbb,
+                inset 5px 0 #d7d7d7,
+                inset -5px 0 #d7d7d7;
+}
+.pip {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: #333;
+    box-shadow: inset 0 3px #111,
+                inset 0 -3px #555;
+}
+
+
+.face1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face2 {
+    display: flex;
+    justify-content: space-between;
+}
+.face2 .pip:nth-child(2) {
+    align-self: flex-end;
+}
+
+.face3 {
+    display: flex;
+    justify-content: space-between;
+}
+.face3 .pip:nth-child(2) {
+    align-self: center;
+}
+.face3 .pip:nth-child(3) {
+    align-self: flex-end;
+}
+
+.face4 {
+    display: flex;
+    justify-content: space-between;
+}
+.face4 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.face5,
+.face6 {
+    display: flex;
+    justify-content: space-between;
+}
+.face5 .column,
+.face6 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.face5 .column:nth-child(2) {
+    justify-content: center;
+}
+
+
+div.face7 {
+    display: flex;
+    width: 154px;
+    height: 154px;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    align-self: flex-start;
+}
+.face7 a {
+    color: #555;
+}
