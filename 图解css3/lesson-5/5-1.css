@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after {
+    height: 0;
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+ol {
+    width: 320px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #fc9;
+}
+ol li {
+    list-style: none outside none;
+}
+ol li a {
+    float: left;
+    width: 14em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+ol li a:hover {
+    color: #fc9;
+    text-decoration: none;
+}
+ol li span {
+    float: left;
+    padding-left: 10px;
+    color: #999;
+}

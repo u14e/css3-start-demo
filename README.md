@@ -12,3 +12,6 @@
     - [border-radius](https://u14e.github.io/css3-start-demo/图解css3/lesson-3/3-1.html)
     - [box-shadow](https://u14e.github.io/css3-start-demo/图解css3/lesson-3/3-2.html)
     - [3D搜索表单](https://u14e.github.io/css3-start-demo/图解css3/lesson-3/3-3.html)
+
+- flex
+    - [骰子布局](https://u14e.github.io/css3-start-demo/flex/dice.html)
