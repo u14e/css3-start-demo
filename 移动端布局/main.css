@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+html, body, .wrap-page {
+    height: 100%;
+}
+.wrap-page {
+    -webkit-overflow-scrolling: touch;
+}
+.header ~ .wrap-page {
+    padding-top: 50px;
+}
+.footer ~ .wrap-page {
+    padding-bottom: 50px;
+}
+.fixed-top {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 960;
+}
+.fixed-bottom {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 940;
+}
+
+.header {
+    background: #ccc;
+    height: 50px;
+}
+.footer {
+    background: #aaa;
+    height: 50px;
+}

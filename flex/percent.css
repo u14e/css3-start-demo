@@ -7,17 +7,20 @@
 .grid {
     display: flex;
 }
-.grid .grid-cell-1 {
+.grid .grid-cell {
     flex: 1;
 }
-.grid .grid-cell-2 {
-    flex: 2;
+.grid .grid-cell.u-full {
+    flex: 0 0 100%;
 }
-.grid .grid-cell-3 {
-    flex: 3;
+.grid .grid-cell.u-1of4 {
+    flex: 0 0 25%;
 }
-.grid .grid-cell-4 {
-    flex: 4;
+.grid .grid-cell.u-1of2 {
+    flex: 0 0 50%;
+}
+.grid .grid-cell.u-1of3 {
+    flex: 0 0 33.3333%;
 }
 
 .container {

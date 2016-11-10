@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #333;
+}
+.fluid div {
+    flex: 0 0 25%;
+
+    height: 100px;
+    border: 1px solid #ff0;
+    background: #aaa;
+    line-height: 100px;
+    text-align: center;
+}
